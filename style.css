@@ -1,0 +1,52 @@
+/* Menggunakan Font Awesome dari CDN */
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css');
+/* Style for WhatsApp Chat Button */
+.whatsapp-chat-rotator {
+    position: fixed;
+    bottom: 20px; /* Adjust the distance from the bottom of the page */
+    right: 20px; /* Adjust the distance from the right side of the page */
+}
+
+.whatsapp-chat-button {
+    display: none;
+    background-color: #25d366; /* Default background color of the button */
+    color: #ffffff; /* Default text color of the button */
+    font-size: 16px; /* Default font size of the button */
+    padding: 10px 20px; /* Default padding of the button */
+    border-radius: 5px; /* Default border radius of the button */
+    text-decoration: none !important;
+    margin-right: 10px;
+    position: relative;
+}
+
+/* Show the first button initially */
+.whatsapp-chat-button:first-child {
+    display: inline-block;
+}
+/* WhatsApp Icon */
+.whatsapp-chat-button::before {
+    content: "\f232"; /* Font Awesome WhatsApp Icon Unicode */
+    font-family: "Font Awesome 5 Brands"; /* Font Awesome Brands Font Family */
+    font-weight: normal;
+    font-style: normal;
+    margin-right: 5px;
+}
+
+/* Style for WhatsApp Contact List */
+.whatsapp-contact-list {
+    list-style: none;
+    padding-left: 0;
+}
+
+.whatsapp-contact-list li {
+    margin-bottom: 5px;
+}
+
+/* WhatsApp Icon in Contact List */
+.whatsapp-contact-list li::before {
+    content: "\f232"; /* Font Awesome WhatsApp Icon Unicode */
+    font-family: "Font Awesome 5 Brands"; /* Font Awesome Brands Font Family */
+    font-weight: normal;
+    font-style: normal;
+    margin-right: 5px;
+}
